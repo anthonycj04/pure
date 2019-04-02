@@ -24,10 +24,12 @@ _pure_set_default pure_color_current_directory $pure_color_primary
 _pure_set_default pure_symbol_git_unpulled_commits "⇣"
 _pure_set_default pure_symbol_git_unpushed_commits "⇡"
 _pure_set_default pure_symbol_git_dirty "*"
+_pure_set_default pure_symbol_git_stashed "\$"
 _pure_set_default pure_color_git_unpulled_commits $pure_color_info
 _pure_set_default pure_color_git_unpushed_commits $pure_color_info
 _pure_set_default pure_color_git_branch $pure_color_mute
 _pure_set_default pure_color_git_dirty $pure_color_mute
+_pure_set_default pure_color_git_stashed $pure_color_danger
 
 # SSH info
 _pure_set_default pure_color_ssh_hostname $pure_color_mute
