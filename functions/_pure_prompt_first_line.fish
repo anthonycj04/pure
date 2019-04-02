@@ -8,7 +8,8 @@ function _pure_prompt_first_line \
     set --local prompt (_pure_print_prompt \
                             (_pure_prompt_ssh) \
                             (_pure_prompt_git) \
-                            (_pure_prompt_command_duration)
+                            (_pure_prompt_command_duration) \
+                            (_pure_prompt_bg_job)
                         )
     set --local prompt_width (_pure_string_width $prompt)
     set --local current_folder (_pure_prompt_current_folder $prompt_width)
@@ -19,13 +20,15 @@ function _pure_prompt_first_line \
                 (_pure_prompt_current_folder $prompt_width) \
                 (_pure_prompt_git) \
                 (_pure_prompt_ssh) \
-                (_pure_prompt_command_duration)
+                (_pure_prompt_command_duration) \
+                (_pure_prompt_bg_job)
     else
         set prompt_components \
                 (_pure_prompt_ssh) \
                 (_pure_prompt_current_folder $prompt_width) \
                 (_pure_prompt_git) \
-                (_pure_prompt_command_duration)
+                (_pure_prompt_command_duration) \
+                (_pure_prompt_bg_job)
     end
 
     echo (_pure_print_prompt $prompt_components)

@@ -14,8 +14,10 @@ _pure_set_default pure_color_dark (set_color black)
 # Prompt
 _pure_set_default pure_symbol_prompt "❯"
 _pure_set_default pure_symbol_reverse_prompt "❮"  # used for VI mode
+_pure_set_default pure_symbol_bg_job "%"
 _pure_set_default pure_color_prompt_on_error $pure_color_danger
 _pure_set_default pure_color_prompt_on_success $pure_color_success
+_pure_set_default pure_color_bg_job $pure_color_danger
 
 # Current Working Directory
 _pure_set_default pure_color_current_directory $pure_color_primary
